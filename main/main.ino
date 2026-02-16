@@ -32,10 +32,7 @@ void setup() {
 
 
   //For Random Number Generation...
-  randomSeed(analogRead(0));
-                                                                                          
-
-
+  randomSeed(analogRead(0));                                                                                   
 }
 
 void loop() {
@@ -51,7 +48,6 @@ void loop() {
     int have = 0;
     showHave(have);
 
-
     //Continuously Read Push-Buttons Until Goal Number Acquired
     while(have != need){
       int b1 = digitalRead(B1);
@@ -60,7 +56,6 @@ void loop() {
       int b4 = digitalRead(B4);
       int b5 = digitalRead(B5);
       //int go = digitalRead(GO);
-
 
       //Detect Button Pressed with Active Low
       if (b1 == LOW) { have += 1; delay(500); }
@@ -72,7 +67,7 @@ void loop() {
 
 
       //Display LED
-
+      
 
       //Display Hex
 
